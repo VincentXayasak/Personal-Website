@@ -1,0 +1,398 @@
+/* Navigation Menu */
+nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgb(195, 29, 29);
+  height: 100%;
+  width: 200px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav li:first-child {
+  margin-top: 200px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.5s;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+nav a:hover {
+  background-color: white;
+  color: rgb(195, 29, 29);
+}
+
+.profilePictureCircle {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fff;
+}
+
+.profilePicture {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transform: scale(1.5);
+}
+
+/* Main */
+main {
+  margin-left: 200px;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+a {
+  color: #1ca7f0;
+}
+
+a:hover {
+  color: #c31e1e;
+}
+
+/* Sections */
+section {
+  padding-top: 50px;
+}
+
+.title {
+  text-align: left;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.subTitle {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+section p {
+  text-align: left;
+  line-height: 1.5;
+  max-width: 800px; 
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.xayasak {
+  color: #c31e1e;
+}
+
+.mobileSizeCommonInfo {
+  display: none;
+}
+
+/* Social Buttons in About Section */
+.social-buttons {
+  display: flex;
+  justify-content: justify;
+  margin-top: 50px;
+}
+
+.social-buttons a {
+  display: flex;
+  justify-content: justify;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #575756;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: background-color 0.5s;
+  margin-right: 20px;
+}
+
+.social-buttons a:hover {
+  background-color: #c31e1e;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: background-color 0.5s;
+  margin-right: 20px;
+}
+
+/* Experience Section */
+.view-projects-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.view-projects-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.chickfilaImage {
+  width: 100px;
+  height: auto; 
+}
+
+.date {
+  margin-left: 50px;
+  color: #5781ae;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.coursework {
+  margin-left: 500px;
+}
+
+.leftcoursework, .rightcoursework {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 150px
+}
+
+/* Contact Section */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-left: 0px;
+}
+
+form label {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-top: 15px;
+}
+
+form input[type="text"], form textarea {
+  width: 90%;
+  padding: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+form input[type="submit"] {
+  width: auto;
+  background-color: rgb(195, 29, 29);
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+form input[type="submit"]:hover {
+  background-color: rgb(150, 25, 25);
+  transition: background-color 0.3s;
+}
+
+.menuName {
+  display: none;
+}
+
+/* When it touches coursework */
+@media screen and (max-width: 1467px) {
+  .coursework {
+    margin-left: 400px;
+  }
+
+  .leftcoursework, .rightcoursework {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px
+  }
+}
+
+/* When it touches coursework again */
+@media screen and (max-width: 1267px) {
+  .coursework {
+    margin-left: 100px;
+  }
+}
+
+/* When it touches commonInfo */
+@media screen and (max-width: 1215px) {
+  .commonInfo {
+    display: none;
+  }
+
+  .mobileSizeCommonInfo {
+    display: block; 
+  }
+}
+
+/* When it touches Chick Fil A date */
+@media screen and (max-width: 1060px) {
+  .date {
+    margin-left: 0;
+    display: block;
+  }
+}
+
+/* Makes nav dissapear and move everything left */
+@media screen and (max-width: 973px) {
+  nav {
+    display: none;
+  }
+
+  main {
+    margin-left: 0px;
+    margin-top: 50px;
+    padding: 50px;
+  }
+
+  .menuBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #c31e1e;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menuName a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+  }
+
+  .menuName a:hover {
+    background-color: white;
+    color: rgb(195, 29, 29);
+  }
+
+  .menuName {
+    display: block;
+    color: white;
+    margin-left: 15px;
+  }
+
+  .menuBar ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .menuBar ul li {
+    padding: 10px 30px;
+    position: relative;
+  }
+  
+  .menuBar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: block;
+  }
+  
+  .menuBar ul li:hover {
+    background-color: white;
+  }
+  
+  .menuBar > ul > li:hover > a {
+    color: rgb(195, 29, 29);
+  }
+  
+  .dropDownNav {
+    display: none;
+    width: 200px;
+  }
+  
+  .menuBar ul li:hover .dropDownNav {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 100%;
+    background-color: rgb(195, 29, 29);
+    text-align: center;
+  }
+  
+  .menuBar ul li:hover .dropDownNav ul {
+    display: block;
+    margin-left: -40px;
+  }
+  
+  .menuBar ul li:hover .dropDownNav ul li {
+    padding: 10px 20px;
+  }
+  
+  .menuBar ul li .dropDownNav ul li:hover a {
+    color: rgb(195, 29, 29);
+  }
+}
+
+/* When touches coursework again after nav dissapearance */
+@media screen and (max-width: 647px) {
+  .coursework {
+    margin-left: 130px;
+  }
+  
+  .leftcoursework {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0px;
+  }
+
+  .rightcoursework {
+    display: block;
+    margin-left: 0px;
+  }
+}
