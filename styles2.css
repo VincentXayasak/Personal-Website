@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; 
+  font-family: 'Share Tech Mono', monospace; 
+}
+
+.content {
+  text-align: center;
+}
+
+.in-progress {
+  font-weight: bold;
+  font-size: 2em;
+  display: inline-block;
+  animation: spin 5s linear infinite;
+}
+
+.description {
+  margin-top: 10px; 
+  font-size: 1em;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
