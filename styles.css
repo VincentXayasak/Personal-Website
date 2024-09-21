@@ -4,7 +4,7 @@ nav {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-color: rgb(195, 29, 29);
+  background-color: #4b5e39;
   height: 100%;
   width: 200px;
 }
@@ -31,12 +31,12 @@ nav a {
   display: block;
   padding: 10px;
   transition: background-color 0.5s;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav a:hover {
   background-color: white;
-  color: rgb(195, 29, 29);
+  color: #4b5e39;
 }
 
 .profilePictureCircle {
@@ -63,7 +63,7 @@ nav a:hover {
 /* Main */
 main {
   margin-left: 200px;
-  margin-top: 50px;
+  margin-top: 52px;
   padding: 50px;
 }
 
@@ -72,7 +72,7 @@ a {
 }
 
 a:hover {
-  color: #c31e1e;
+  color: #7bff00;
 }
 
 /* Sections */
@@ -84,25 +84,25 @@ section {
   text-align: left;
   font-size: 4rem;
   margin-bottom: 20px;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .subTitle {
   text-align: left;
   font-size: 1.5rem;
   margin-bottom: 20px;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 section p {
   text-align: left;
   line-height: 1.5;
   max-width: 800px; 
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .xayasak {
-  color: #c31e1e;
+  color: #7bff00;
 }
 
 .mobileSizeCommonInfo {
@@ -131,7 +131,7 @@ section p {
 }
 
 .social-buttons a:hover {
-  background-color: #c31e1e;
+  background-color: #7bff00;
 }
 
 .social-button {
@@ -157,7 +157,7 @@ section p {
   color: #000;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .view-projects-button:hover {
@@ -167,6 +167,16 @@ section p {
 
 .chickfilaImage {
   width: 100px;
+  height: auto; 
+}
+
+.UC_Davis_Logo {
+  width: 400px;
+  height: auto; 
+}
+
+.AggieLogo {
+  width: 200px;
   height: auto; 
 }
 
@@ -187,6 +197,55 @@ section p {
   margin-left: 150px
 }
 
+/* Projects Section */
+#projects {
+  padding: 20px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* This allows wrapping on smaller screens */
+}
+
+.MichelinGif, .WatershedGif {
+  width: 100%;
+  max-width: 400px;
+  height: auto; 
+  margin-right: 20px;
+}
+
+.NPS {
+  width: 100%;
+  max-width: 900px;
+  height: auto; 
+  margin-right: 20px;
+}
+
+.project-description {
+  max-width: 500px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column; /* Stacks the image and description vertically */
+    align-items: flex-start;
+  }
+
+  .MichelinGif, .NPS, .WatershedGif {
+    margin-right: 0; /* Removes the margin when stacked */
+    margin-bottom: 15px; /* Adds spacing between image and paragraph */
+    width: 100%; /* Full width on small screens */
+  }
+
+  .project-description {
+    max-width: 100%; /* Allows the text to span the full width */
+  }
+}
+
+
 /* Contact Section */
 form {
   display: flex;
@@ -201,7 +260,7 @@ form {
 }
 
 form label {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #333;
   margin-top: 15px;
@@ -210,7 +269,7 @@ form label {
 form input[type="text"], form textarea {
   width: 90%;
   padding: 10px;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -224,9 +283,9 @@ form textarea {
 
 form input[type="submit"] {
   width: auto;
-  background-color: rgb(195, 29, 29);
+  background-color: #4b5e39;
   color: white;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   border: none;
   border-radius: 3px;
@@ -236,7 +295,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: rgb(150, 25, 25);
+  background-color: #7bff00;
   transition: background-color 0.3s;
 }
 
@@ -299,7 +358,7 @@ form input[type="submit"]:hover {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #c31e1e;
+    background-color: #4b5e39;
     height: 50px;
     width: 100%;
     display: flex;
@@ -315,7 +374,7 @@ form input[type="submit"]:hover {
 
   .menuName a:hover {
     background-color: white;
-    color: rgb(195, 29, 29);
+    color: #4b5e39;
   }
 
   .menuName {
@@ -338,7 +397,7 @@ form input[type="submit"]:hover {
     color: white;
     text-decoration: none;
     transition: all 0.5s;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Raleway', sans-serif;
     display: block;
   }
   
@@ -347,7 +406,7 @@ form input[type="submit"]:hover {
   }
   
   .menuBar > ul > li:hover > a {
-    color: rgb(195, 29, 29);
+    color: #4b5e39;
   }
   
   .dropDownNav {
@@ -361,7 +420,7 @@ form input[type="submit"]:hover {
     right: 0;
     left: auto;
     top: 100%;
-    background-color: rgb(195, 29, 29);
+    background-color: #4b5e39;
     text-align: center;
   }
   
@@ -375,7 +434,7 @@ form input[type="submit"]:hover {
   }
   
   .menuBar ul li .dropDownNav ul li:hover a {
-    color: rgb(195, 29, 29);
+    color: #4b5e39;
   }
 }
 
@@ -394,5 +453,18 @@ form input[type="submit"]:hover {
   .rightcoursework {
     display: block;
     margin-left: 0px;
+  }
+}
+
+/* When it touches UC Davis logo */
+@media screen and (max-width: 750px) {
+  .UC_Davis_Logo {
+    width: 200px;
+    height: auto; 
+  }
+  
+  .AggieLogo {
+    width: 100px;
+    height: auto; 
   }
 }
